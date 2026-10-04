@@ -1,0 +1,58 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="1000" fill="#F4F9F7"/>
+
+  <!-- Map Title -->
+  <text x="500" y="60" font-family="system-ui, sans-serif" font-size="36" font-weight="800" fill="#334155" text-anchor="middle">PREMIUM HOSTEL MAP</text>
+  <text x="500" y="90" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#64748B" text-anchor="middle">GROUND FLOOR</text>
+
+  <!-- Hallway (grayish floor) -->
+  <rect x="480" y="200" width="140" height="700" rx="15" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="4"/>
+  
+  <!-- Hallway branches to rooms to look natural -->
+  <rect x="600" y="810" width="80" height="80" fill="#E2E8F0" />
+  <rect x="420" y="710" width="80" height="80" fill="#E2E8F0" />
+  <rect x="600" y="550" width="80" height="80" fill="#E2E8F0" />
+  <rect x="420" y="400" width="80" height="80" fill="#E2E8F0" />
+  <rect x="600" y="200" width="80" height="80" fill="#E2E8F0" />
+  <rect x="420" y="140" width="80" height="80" fill="#E2E8F0" />
+
+  <!-- Rooms -->
+  <g stroke-width="4">
+    <!-- Reception -->
+    <rect x="650" y="780" width="250" height="150" rx="15" fill="#FEF3C7" stroke="#FDE68A"/>
+    <text x="775" y="855" font-family="system-ui, sans-serif" font-size="24" font-weight="bold" fill="#B45309" text-anchor="middle">RECEPTION</text>
+    <text x="775" y="885" font-family="system-ui, sans-serif" font-size="14" fill="#B45309" text-anchor="middle">Check-in / Out</text>
+
+    <!-- Common Room -->
+    <rect x="100" y="650" width="350" height="200" rx="15" fill="#D1FAE5" stroke="#A7F3D0"/>
+    <text x="275" y="750" font-family="system-ui, sans-serif" font-size="24" font-weight="bold" fill="#047857" text-anchor="middle">COMMON ROOM</text>
+    <text x="275" y="780" font-family="system-ui, sans-serif" font-size="14" fill="#047857" text-anchor="middle">Lounge &amp; TV</text>
+
+    <!-- Kitchen -->
+    <rect x="650" y="500" width="250" height="180" rx="15" fill="#FFE4E6" stroke="#FECDD3"/>
+    <text x="775" y="590" font-family="system-ui, sans-serif" font-size="24" font-weight="bold" fill="#BE123C" text-anchor="middle">KITCHEN</text>
+    <text x="775" y="620" font-family="system-ui, sans-serif" font-size="14" fill="#BE123C" text-anchor="middle">Communal Dining</text>
+
+    <!-- Washrooms -->
+    <rect x="120" y="360" width="330" height="150" rx="15" fill="#E0F2FE" stroke="#BAE6FD"/>
+    <text x="285" y="435" font-family="system-ui, sans-serif" font-size="24" font-weight="bold" fill="#0369A1" text-anchor="middle">WASHROOMS</text>
+    <text x="285" y="465" font-family="system-ui, sans-serif" font-size="14" fill="#0369A1" text-anchor="middle">Showers &amp; Laundry</text>
+
+    <!-- Dorm B -->
+    <rect x="650" y="100" width="250" height="300" rx="15" fill="#EDE9FE" stroke="#DDD6FE"/>
+    <text x="775" y="250" font-family="system-ui, sans-serif" font-size="24" font-weight="bold" fill="#6D28D9" text-anchor="middle">DORMITORY B</text>
+    <text x="775" y="280" font-family="system-ui, sans-serif" font-size="14" fill="#6D28D9" text-anchor="middle">Beds 13 - 24</text>
+
+    <!-- Dorm A -->
+    <rect x="100" y="100" width="350" height="200" rx="15" fill="#EDE9FE" stroke="#DDD6FE"/>
+    <text x="275" y="200" font-family="system-ui, sans-serif" font-size="24" font-weight="bold" fill="#6D28D9" text-anchor="middle">DORMITORY A</text>
+    <text x="275" y="230" font-family="system-ui, sans-serif" font-size="14" fill="#6D28D9" text-anchor="middle">Beds 1 - 12</text>
+  </g>
+
+  <!-- Entrance Label -->
+  <g>
+    <path d="M 775 970 L 775 930" stroke="#94A3B8" stroke-width="4" stroke-dasharray="5,5"/>
+    <text x="775" y="990" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#64748B" text-anchor="middle">MAIN ENTRANCE</text>
+  </g>
+</svg>

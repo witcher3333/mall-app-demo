@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    { "id": "entrance", "x": 780, "y": 950 },
+    { "id": "reception", "x": 780, "y": 850 },
+    { "id": "hallway_south", "x": 550, "y": 850 },
+    { "id": "common_room", "x": 270, "y": 750 },
+    { "id": "hallway_mid_1", "x": 550, "y": 680 },
+    { "id": "kitchen", "x": 780, "y": 590 },
+    { "id": "hallway_mid_2", "x": 550, "y": 590 },
+    { "id": "washrooms", "x": 220, "y": 440 },
+    { "id": "hallway_north", "x": 550, "y": 440 },
+    { "id": "dorm_b", "x": 780, "y": 240 },
+    { "id": "hallway_far_north", "x": 550, "y": 240 },
+    { "id": "dorm_a", "x": 220, "y": 180 }
+  ],
+  "edges": [
+    { "source": "entrance", "target": "reception" },
+    { "source": "reception", "target": "hallway_south" },
+    { "source": "hallway_south", "target": "hallway_mid_1" },
+    { "source": "hallway_mid_1", "target": "common_room" },
+    { "source": "hallway_mid_1", "target": "hallway_mid_2" },
+    { "source": "hallway_mid_2", "target": "kitchen" },
+    { "source": "hallway_mid_2", "target": "hallway_north" },
+    { "source": "hallway_north", "target": "washrooms" },
+    { "source": "hallway_north", "target": "hallway_far_north" },
+    { "source": "hallway_far_north", "target": "dorm_b" },
+    { "source": "hallway_far_north", "target": "dorm_a" }
+  ]
+}
