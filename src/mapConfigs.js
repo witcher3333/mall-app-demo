@@ -1,45 +1,45 @@
 export const mapConfigs = {
-  hostel: {
+  ground_floor: {
     imageUrl: '/premium_hostel.svg',
     bounds: [[0, 0], [1000, 1000]],
     nodes: [
-      { id: 'entrance', x: 780, y: 950 },
-      { id: 'reception', x: 780, y: 850 },
-      { id: 'hallway_south', x: 550, y: 850 },
-      { id: 'common_room', x: 270, y: 750 },
-      { id: 'hallway_mid_1', x: 550, y: 680 },
-      { id: 'kitchen', x: 780, y: 590 },
-      { id: 'hallway_mid_2', x: 550, y: 590 },
-      { id: 'washrooms', x: 220, y: 440 },
-      { id: 'hallway_north', x: 550, y: 440 },
-      { id: 'dorm_b', x: 780, y: 240 },
-      { id: 'hallway_far_north', x: 550, y: 240 },
-      { id: 'dorm_a', x: 220, y: 180 }
+      { id: 'entrance', x: 500, y: 900 },
+      { id: 'washroom', x: 200, y: 700 },
+      { id: 'khaadi', x: 800, y: 700 },
+      { id: 'outfitters', x: 800, y: 600 },
+      { id: 'sapphire', x: 800, y: 500 },
+      { id: 'howdy', x: 300, y: 400 },
+      { id: 'kfc', x: 500, y: 400 },
+      { id: 'saltnpepper', x: 700, y: 400 },
+      { id: 'jfragrances', x: 200, y: 200 },
+      { id: 'saeedghani', x: 400, y: 200 }
     ],
     links: [
-      { source: 'entrance', target: 'reception' },
-      { source: 'reception', target: 'hallway_south' },
-      { source: 'hallway_south', target: 'hallway_mid_1' },
-      { source: 'hallway_mid_1', target: 'common_room' },
-      { source: 'hallway_mid_1', target: 'hallway_mid_2' },
-      { source: 'hallway_mid_2', target: 'kitchen' },
-      { source: 'hallway_mid_2', target: 'hallway_north' },
-      { source: 'hallway_north', target: 'washrooms' },
-      { source: 'hallway_north', target: 'hallway_far_north' },
-      { source: 'hallway_far_north', target: 'dorm_b' },
-      { source: 'hallway_far_north', target: 'dorm_a' }
+      { source: 'entrance', target: 'washroom' },
+      { source: 'entrance', target: 'kfc' },
+      { source: 'washroom', target: 'howdy' },
+      { source: 'kfc', target: 'howdy' },
+      { source: 'kfc', target: 'saltnpepper' },
+      { source: 'kfc', target: 'khaadi' },
+      { source: 'khaadi', target: 'outfitters' },
+      { source: 'outfitters', target: 'sapphire' },
+      { source: 'howdy', target: 'jfragrances' },
+      { source: 'jfragrances', target: 'saeedghani' }
     ],
     locations: [
-      { id: 'entrance', name: 'Main Entrance', category: 'Facilities' },
-      { id: 'reception', name: 'Reception Desk', category: 'Facilities' },
-      { id: 'common_room', name: 'Main Common Room', category: 'Social' },
-      { id: 'kitchen', name: 'Communal Kitchen', category: 'Social' },
-      { id: 'washrooms', name: 'Washrooms', category: 'Facilities' },
-      { id: 'dorm_a', name: 'Dormitory A', category: 'Accommodation' },
-      { id: 'dorm_b', name: 'Dormitory B', category: 'Accommodation' }
+      { id: 'khaadi', name: 'Khaadi', category: 'Clothing' },
+      { id: 'outfitters', name: 'Outfitters', category: 'Clothing' },
+      { id: 'sapphire', name: 'Sapphire', category: 'Clothing' },
+      { id: 'howdy', name: 'Howdy', category: 'Food' },
+      { id: 'kfc', name: 'KFC', category: 'Food' },
+      { id: 'saltnpepper', name: 'Salt n Pepper', category: 'Food' },
+      { id: 'jfragrances', name: 'J. Fragrances', category: 'Perfume' },
+      { id: 'saeedghani', name: 'Saeed Ghani', category: 'Perfume' },
+      { id: 'washroom', name: 'Washroom', category: 'Facilities' },
+      { id: 'entrance', name: 'Entrance', category: 'Facilities' }
     ]
   },
-  office: {
+  second_floor: {
     imageUrl: '/office_map.svg',
     bounds: [[0, 0], [1000, 1000]],
     nodes: [
@@ -49,7 +49,7 @@ export const mapConfigs = {
       { id: 'door_4', x: 500, y: 600 },
       { id: 'door_5', x: 200, y: 600 },
       { id: 'kitchen', x: 800, y: 400 },
-      { id: 'washroom', x: 500, y: 400 },
+      { id: 'washroom_2', x: 500, y: 400 },
       { id: 'meeting_room', x: 200, y: 200 }
     ],
     links: [
@@ -58,17 +58,17 @@ export const mapConfigs = {
       { source: 'door_3', target: 'door_4' },
       { source: 'door_4', target: 'door_5' },
       { source: 'door_3', target: 'kitchen' },
-      { source: 'door_4', target: 'washroom' },
+      { source: 'door_4', target: 'washroom_2' },
       { source: 'door_5', target: 'meeting_room' }
     ],
     locations: [
       { id: 'meeting_room', name: 'Meeting Room', category: 'Meeting Rooms' },
       { id: 'kitchen', name: 'Kitchen', category: 'Facilities' },
-      { id: 'washroom', name: 'Washroom', category: 'Facilities' },
+      { id: 'washroom_2', name: 'Washroom (2nd Floor)', category: 'Facilities' },
       { id: 'fire_exit', name: 'Fire Exit', category: 'Facilities' },
-      { id: 'door_3', name: 'Employee Workspace (Door 3)', category: 'Offices' },
-      { id: 'door_4', name: 'Employee Workspace (Door 4)', category: 'Offices' },
-      { id: 'door_5', name: 'Employee Workspace (Door 5)', category: 'Offices' }
+      { id: 'door_3', name: 'Employee Workspace 3', category: 'Offices' },
+      { id: 'door_4', name: 'Employee Workspace 4', category: 'Offices' },
+      { id: 'door_5', name: 'Employee Workspace 5', category: 'Offices' }
     ]
   }
 };
